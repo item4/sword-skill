@@ -232,3 +232,17 @@ Represents wind observation data.
     "error": "Bad HTTP Response: 503"
 }
 ```
+
+### Fields
+
+- `ok`
+    - Type: `false`
+    - Meaning: the command failed
+
+- `command`
+    - Type: literal string `"weather"`
+    - Meaning: identifies the subcommand that produced this output
+
+- `error`
+    - Type: `str`
+    - Meaning: Human-readable error message
