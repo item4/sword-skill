@@ -1,6 +1,6 @@
 # Sword Skill
 
-Sword Skill is skill sets for OpenClaw
+Sword Skill is a skill set for OpenClaw.
 
 
 ## LICENSE
