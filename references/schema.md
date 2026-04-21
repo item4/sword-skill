@@ -37,21 +37,21 @@ sws weather
 ### Fields
 
 - `ok`
-- Type: `true`
-- Meaning: the command succeeded
+    - Type: `true`
+    - Meaning: the command succeeded
 
 - `command`
-- Type: literal string `"weather"`
-- Meaning: identifies the subcommand that produced this output
+    - Type: literal string `"weather"`
+    - Meaning: identifies the subcommand that produced this output
 
 - `observed_at`
-- Type: `str`
-- Format: ISO 8601 datetime string with timezone offset
-- Meaning: timestamp of the observation set represented by this payload
+    - Type: `str`
+    - Format: ISO 8601 datetime string with timezone offset
+    - Meaning: timestamp of the observation set represented by this payload
 
 - `records`
-- Type: `list[Record]`
-- Meaning: list of station observation records across South Korea
+    - Type: `list[Record]`
+    - Meaning: list of station observation records across South Korea
 
 ### `Record`
 
