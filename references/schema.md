@@ -190,6 +190,8 @@ Represents rainfall-related fields for a station.
     - Meaning: daily accumulated rainfall
     - Unit: WIP
 
+- Note: These rainfall units are not yet formally verified and should not be treated as authoritative.
+
 ### `Wind` Shape
 
 Represents wind observation data.
