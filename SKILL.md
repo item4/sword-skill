@@ -1,6 +1,6 @@
 ---
 name: sword-skill
-description: Query structured utility data through the `sws` CLI. Use when the user needs supported command-style data retrieval implemented by this skill.
+description: Query structured utility data through the `sws` CLI. Currently supports real-time Korea Meteorological Administration AWS weather observations across South Korea. Use when the user asks for current South Korea weather observations or nationwide station data.
 ---
 
 # Sword Skill
