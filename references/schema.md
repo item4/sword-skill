@@ -53,7 +53,7 @@ sws weather
     - Type: `list[Record]`
     - Meaning: list of station observation records across South Korea
 
-### `Record`
+### `Record` Shape
 
 Represents one AWS station observation.
 
@@ -134,7 +134,7 @@ Represents one AWS station observation.
     - Meaning: station address
 
 
-### `Rain`
+### `Rain` Shape
 
 Represents rainfall-related fields for a station.
 
@@ -190,7 +190,7 @@ Represents rainfall-related fields for a station.
     - Meaning: daily accumulated rainfall
     - Unit: WIP
 
-### `Wind`
+### `Wind` Shape
 
 Represents wind observation data.
 
