@@ -1,7 +1,7 @@
 [project]
 name = "sword-skill"
 version = "0.1.0"
-description = "Sword Skill is skill sets for OpenClaw"
+description = "Sword Skill is a skill set for OpenClaw."
 readme = "README.md"
 authors = [{ name = "Kim, Jin Su" }]
 requires-python = ">=3.14"
