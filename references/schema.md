@@ -20,7 +20,7 @@ On failure, the output includes `ok: false` and a top-level `error` field contai
 ### Command
 
 ```shell
-sws weather
+uv run sws weather
 ```
 
 ### Success shape example

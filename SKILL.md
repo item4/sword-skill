@@ -17,10 +17,12 @@ uv sync
 
 ## Command entrypoint
 
-All commands are invoked through:
+All commands must be run from the root directory of this skill project.
+
+Use `uv run` to invoke the CLI, for example:
 
 ```shell
-sws <subcommand> ...
+uv run sws <subcommand> ...
 ```
 
 ## Supported commands
@@ -32,7 +34,7 @@ This returns the latest real-time AWS observation data from Korea Meteorological
 #### Run Example
 
 ```shell
-sws weather
+uv run sws weather
 ```
 
 See `references/schema.md` for the output structure.
