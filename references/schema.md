@@ -9,7 +9,7 @@ Common top-level fields:
 - `ok: bool`
 - `command: str`
 
-When command was failed, `ok` will be `false` and `error` field that contain human semi-readable error message will be added on top-level.
+On failure, the output includes `ok: false` and a top-level `error` field containing a human-readable error message.
 
 `stderr` is reserved for logs or diagnostics and must not contain the primary result payload.
 
