@@ -245,4 +245,4 @@ Represents wind observation data.
 
 - `error`
     - Type: `str`
-    - Meaning: Human-readable error message
+    - Meaning: human-readable error message
