@@ -29,11 +29,13 @@ sws <subcommand> ...
 
 This returns the latest real-time AWS observation data from Korea Meteorological Administration stations across South Korea.
 
-#### Run
+#### Run Example
 
 ```shell
 sws weather
 ```
+
+See `references/schema.md` for the output structure.
 
 #### Output contract
 
