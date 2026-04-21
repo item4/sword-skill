@@ -9,6 +9,8 @@ Common top-level fields:
 - `ok: bool`
 - `command: str`
 
+When command was failed, `ok` will be `false` and `error` field that contain human semi-readable error message will be added on top-level.
+
 `stderr` is reserved for logs or diagnostics and must not contain the primary result payload.
 
 ---
@@ -20,7 +22,8 @@ Common top-level fields:
 ```shell
 sws weather
 ```
-### Success shape
+
+### Success shape example
 
 ```json
 {
@@ -54,6 +57,12 @@ sws weather
 
 `Record` is not fully documented yet.
 
-## Failure shape
+## Failure shape example
 
-WIP
+```json
+{
+    "ok": false,
+    "command": "weather",
+    "error": "Bad HTTP Response: 503"
+}
+```
