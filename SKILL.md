@@ -19,7 +19,7 @@ uv sync
 
 All commands must be run from the root directory of this skill project.
 
-Use `uv run` to invoke the CLI, for example:
+Invoke the CLI with `uv run`:
 
 ```shell
 uv run sws <subcommand> ...
