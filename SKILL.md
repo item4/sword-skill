@@ -54,13 +54,20 @@ When `ok` is `true`, the output also includes:
 - `observed_at: str` — observation timestamp in ISO 8601 datetime format with timezone offset
 - `records: list[Record]` — observation records from stations across South Korea
 
-The detailed `Record` schema is documented in `references/schema.md`. If that schema is incomplete, treat `records` as structured station observation objects and inspect sample output before relying on individual fields.
+The detailed `Record` schema is documented in `references/schema.md`.
+
+The `weather` command returns nationwide AWS observations across South Korea. It does not pre-filter records for a single place.
+For location-specific use, first filter `records` by relevant fields such as `address` or station name before interpreting or summarizing the result.
+
+If the schema is incomplete, treat `records` as structured station observation objects and inspect sample output before relying on individual fields.
 
 #### Usage guidance
 
 Use this skill when the user asks for current weather observation data in South Korea and structured nationwide AWS station measurements are useful.
 
-If the user only wants a short human-facing answer, summarize the returned JSON instead of dumping raw output.
+If the user asks about a specific city, district, or area, do not treat the raw `records` list as a direct single-location answer. Filter the records first, then summarize the matching observations.
+
+If the user only wants a short human-facing answer, summarize the filtered result instead of dumping raw JSON.
 
 ## Schema
 
