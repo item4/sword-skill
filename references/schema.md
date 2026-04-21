@@ -27,10 +27,39 @@ uv run sws weather
 
 ```json
 {
-"ok": true,
-"command": "weather",
-"observed_at": "2025-04-21T13:30:00+09:00",
-"records": [{"id":90,"name":"속초","height":18,"rain":{"is_raining":"Clear","rain15":0.0,"rain60":0.0,"rain3h":0.0,"rain6h":0.0,"rain12h":0.0,"rainday":0.0},"temperature":21.7,"wind1":{"direction_code":260.0,"direction_text":"W","velocity":8.2},"wind10":{"direction_code":264.7,"direction_text":"W","velocity":7.7},"humidity":18.0,"atmospheric":1011.5,"address":"강원특별자치도 고성군 토성면 봉포리"}]
+    "ok": true,
+    "command": "weather",
+    "observed_at": "2025-04-21T13:30:00+09:00",
+    "records": [
+        {
+            "id": 90,
+            "name": "속초",
+            "height": 18,
+            "rain": {
+                "is_raining": "Clear",
+                "rain15": 0.0,
+                "rain60": 0.0,
+                "rain3h": 0.0,
+                "rain6h": 0.0,
+                "rain12h": 0.0,
+                "rainday": 0.0
+            },
+            "temperature": 21.7,
+            "wind1":{
+                "direction_code": 260.0,
+                "direction_text": "W",
+                "velocity": 8.2
+            },
+            "wind10":{
+                "direction_code": 264.7,
+                "direction_text": "W",
+                "velocity": 7.7
+            },
+            "humidity": 18.0,
+            "atmospheric": 1011.5,
+            "address": "강원특별자치도 고성군 토성면 봉포리"
+        }
+    ]
 }
 ```
 
@@ -59,32 +88,32 @@ Represents one AWS station observation.
 
 ```json
 {
-    "id":90,
-    "name":"속초",
-    "height":18,
-    "rain":{
-        "is_raining":"Clear",
-        "rain15":0.0,
-        "rain60":0.0,
-        "rain3h":0.0,
-        "rain6h":0.0,
-        "rain12h":0.0,
-        "rainday":0.0
+    "id": 90,
+    "name": "속초",
+    "height": 18,
+    "rain": {
+        "is_raining": "Clear",
+        "rain15": 0.0,
+        "rain60": 0.0,
+        "rain3h": 0.0,
+        "rain6h": 0.0,
+        "rain12h": 0.0,
+        "rainday": 0.0
     },
-    "temperature":21.7,
+    "temperature": 21.7,
     "wind1":{
-        "direction_code":260.0,
-        "direction_text":"W",
-        "velocity":8.2
+        "direction_code": 260.0,
+        "direction_text": "W",
+        "velocity": 8.2
     },
     "wind10":{
-        "direction_code":264.7,
-        "direction_text":"W",
-        "velocity":7.7
+        "direction_code": 264.7,
+        "direction_text": "W",
+        "velocity": 7.7
     },
-    "humidity":18.0,
-    "atmospheric":1011.5,
-    "address":"강원특별자치도 고성군 토성면 봉포리"
+    "humidity": 18.0,
+    "atmospheric": 1011.5,
+    "address": "강원특별자치도 고성군 토성면 봉포리"
 }
 ```
 #### Fields
